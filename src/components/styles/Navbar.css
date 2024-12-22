@@ -1,0 +1,30 @@
+/* Estilo para el logo */
+.navbar-logo {
+  height: 40px; /* Tamaño del logo */
+  width: auto;
+}
+
+/* Efecto hover para los enlaces de Drawer en móviles */
+.MuiListItem-root:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+/* Botón de Menú de Hamburguesa */
+.MuiIconButton-root:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* AppBar (Navbar Principal) */
+.navbar-appbar {
+  background: #ffffff !important; /* Fondo blanco */
+  border-bottom: 1px solid #ddd; /* Línea sutil en la parte inferior */
+}
+
+/* Texto de los botones */
+.navbar-button {
+  font-weight: bold;
+  color: #333;
+  text-transform: none;
+}

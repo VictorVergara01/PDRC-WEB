@@ -1,0 +1,51 @@
+/* Contenedor del componente de búsqueda */
+.search-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaciado con el resto del contenido */
+  position: relative; /* Necesario para posicionar iconos u otros elementos decorativos */
+  width: 100%;
+}
+
+/* Input del campo de búsqueda */
+.search-input {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 500px; /* Limita el ancho máximo */
+  padding: 12px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+  border: 1px solid #ccc; /* Borde sutil */
+  border-radius: 25px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Fondo claro */
+  transition: all 0.3s ease; /* Transiciones suaves */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Placeholder del input */
+.search-input::placeholder {
+  color: #aaa; /* Color más claro para el placeholder */
+  font-style: italic; /* Estilo cursivo */
+}
+
+/* Efecto al enfocar el input */
+.search-input:focus {
+  outline: none; /* Elimina el borde predeterminado */
+  border-color: #1f7efa; /* Borde azul */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 0 8px rgba(31, 126, 250, 0.3); /* Sombra azul */
+}
+
+/* Icono decorativo para búsqueda */
+.search-component::before {
+  content: "🔍"; /* Icono de lupa */
+  position: absolute; /* Posición absoluta para colocarlo dentro del input */
+  left: 15px; /* Alineado a la izquierda */
+  font-size: 18px; /* Tamaño del icono */
+  color: #aaa; /* Color del icono */
+}
+
+/* Ajuste para el input con icono */
+.search-input {
+  padding-left: 45px; /* Espaciado adicional para acomodar el icono */
+}
